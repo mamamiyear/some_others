@@ -72,9 +72,9 @@ flush()
 	for((_pb_rage;_pb_rate<=$upon;_pb_rate++));
 	do
 		if [ -z "$_pb_bar" ];then
-			printf "progress:[%-100s][%d%%][\033[${cformat}m%s\033[0m]\r]" "" $_pb_rate "$msg"
+			printf "progress:[%-100s][%d%%][\033[${cformat}m%s\033[0m]\r" "" $_pb_rate "$msg"
 		else
-			printf "progress:[%-100s][%d%%][\033[${cformat}m%s\033[0m]\r]" $_pb_bar $_pb_rate "$msg"
+			printf "progress:[%-100s][%d%%][\033[${cformat}m%s\033[0m]\r" $_pb_bar $_pb_rate "$msg"
 		fi
 		sleep $speed
 		_pb_bar=#$_pb_bar
