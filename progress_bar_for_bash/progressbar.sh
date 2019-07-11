@@ -11,6 +11,7 @@
 #		message color:    red | green | yellow | blue | carmine | white, default: white.
 #	
 #	Notice: At the end of your progress, you should use "echo " to change to next line.
+#	Notice: Only support bash, not support basic shell or dash.
 
 # config
 _pb_config_speed=0.03
@@ -120,6 +121,7 @@ _pb_usage()
 		message color:    red | green | yellow | blue | carmine | white, default: white.
 	
 	Notice: At the end of your progress, you should use "echo " to change to next line.
+	Notice: Only support bash, not support basic shell or dash.
 '
 }
 # usage finished
