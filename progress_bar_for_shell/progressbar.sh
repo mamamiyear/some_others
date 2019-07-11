@@ -79,12 +79,6 @@ flush()
 		sleep $speed
 		_pb_bar=#$_pb_bar
 	done
-	
-	# control bar value
-	if [ $_pb_rate -gt 100 ]; then
-		_pb_rate=100
-		_pb_bar=${_pb_bar:0:100}
-	fi
 }
 # main function finished
 
